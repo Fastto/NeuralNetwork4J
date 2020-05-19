@@ -2,3 +2,4 @@ train/
 out/
 .idea/
 *.iml
+/target/
