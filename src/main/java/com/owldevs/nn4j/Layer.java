@@ -1,3 +1,8 @@
+package com.owldevs.nn4j;
+
+/**
+ *
+ */
 public class Layer {
 
     public int size;
