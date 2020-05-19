@@ -3,7 +3,7 @@ package com.owldevs.nn4j;
 import java.util.function.UnaryOperator;
 
 /**
- *
+ * The simple implementation of the multilayer perceptron.
  */
 public class NeuralNetwork implements Cloneable {
 
@@ -14,7 +14,8 @@ public class NeuralNetwork implements Cloneable {
 
     /**
      * Creating new NN with random weights and biases
-     * @param learningRate
+     *
+     * @param learningRate 0..1
      * @param sizes
      */
     public NeuralNetwork(double learningRate, int... sizes) {
@@ -37,8 +38,9 @@ public class NeuralNetwork implements Cloneable {
     }
 
     /**
-     * Creating new NN with preconfigured weights and biases
-     * @param learningRate
+     * Creating new NN with preconfigured weights and biases.
+     *
+     * @param learningRate 0..1
      * @param layers
      */
     public NeuralNetwork (double learningRate, Layer[] layers) {
@@ -74,7 +76,7 @@ public class NeuralNetwork implements Cloneable {
      *
      * @param targets
      */
-    public void backpropagation(double[] targets) {
+    public void backPropagation(double[] targets) {
         double[] errors = new double[layers[layers.length - 1].size];
         for (int i = 0; i < layers[layers.length - 1].size; i++) {
             errors[i] = targets[i] - layers[layers.length - 1].neurons[i];
@@ -117,8 +119,8 @@ public class NeuralNetwork implements Cloneable {
 
     /**
      *
-     * @param rate
-     * @param chance
+     * @param rate 0..1
+     * @param chance 0..1 where 1 means 100%
      */
     public void mutate(double rate, double chance) {
         for (int i = 0; i < layers.length; i++){
@@ -147,6 +149,7 @@ public class NeuralNetwork implements Cloneable {
     }
 
     /**
+     * Crossing over current Network with the target.
      *
      * @param nn
      */
@@ -171,11 +174,12 @@ public class NeuralNetwork implements Cloneable {
     }
 
     /**
+     * Clonning the current Network
      *
      * @return
      */
     @Override
-    public  NeuralNetwork clone(){
+    public NeuralNetwork clone(){
         Layer[] newLayers = new Layer[layers.length];
 
         for (int i = 0; i < layers.length; i++) {
