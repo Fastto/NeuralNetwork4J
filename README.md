@@ -1,2 +1,2 @@
-# SimpleNN
-Simple Implementation of Perceptron on Java
+# NN4J
+Simple Implementation of Neural Network on Java
