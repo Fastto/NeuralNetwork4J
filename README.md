@@ -11,7 +11,7 @@
 
 ## Usage
 
-## Example project
+## Example projects
 ### Simulation of evolution 
 https://github.com/Fastto/SimulationOfEvolution. 
 
