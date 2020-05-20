@@ -10,7 +10,30 @@
 6. Individual width of the each Layer of the Network
 
 ## Usage
+To use module you need just to add it as dependency to pom.xml of your project
 
+`     <repositories>
+         <repository>
+             <id>com.owldevs.nn4j</id>
+             <url>https://raw.github.com/Fastto/NeuralNetwork4J/mvn-repo/</url>
+         </repository>
+     </repositories>
+ 
+     <dependencies>
+         <dependency>
+             <groupId>com.owldevs</groupId>
+             <artifactId>com.owldevs.nn4j</artifactId>
+             <version>1.0-SNAPSHOT</version>
+         </dependency>
+ 
+         <dependency>
+             <groupId>org.openjfx</groupId>
+             <artifactId>javafx</artifactId>
+             <version>11</version>
+             <type>pom</type>
+         </dependency>
+     </dependencies>`
+    
 ## Example projects
 ### Simulation of evolution 
 https://github.com/Fastto/SimulationOfEvolution. 
