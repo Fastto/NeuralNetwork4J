@@ -12,7 +12,8 @@
 ## Usage
 To use module you need just to add it as dependency to pom.xml of your project
 
-`     <repositories>
+```xml
+     <repositories>
          <repository>
              <id>com.owldevs.nn4j</id>
              <url>https://raw.github.com/Fastto/NeuralNetwork4J/mvn-repo/</url>
@@ -32,7 +33,8 @@ To use module you need just to add it as dependency to pom.xml of your project
              <version>11</version>
              <type>pom</type>
          </dependency>
-     </dependencies>`
+     </dependencies>
+```
     
 ## Example projects
 ### Simulation of evolution 
