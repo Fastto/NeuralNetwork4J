@@ -26,13 +26,6 @@ To use module you need just to add it as dependency to pom.xml of your project
              <artifactId>com.owldevs.nn4j</artifactId>
              <version>1.0-SNAPSHOT</version>
          </dependency>
- 
-         <dependency>
-             <groupId>org.openjfx</groupId>
-             <artifactId>javafx</artifactId>
-             <version>11</version>
-             <type>pom</type>
-         </dependency>
      </dependencies>
 ```
     
